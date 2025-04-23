@@ -8,6 +8,6 @@ test('getDay returns the long-format day of the week', () => {
 });
 
 test('getDay returns month of the year', () => {
-    const month = monthOfTheYear( new Date('1/11/2020') );
-    expect(month).toBe('Marchs');
+    const month = monthOfTheYear( new Date('20/11/2020') );
+    expect(month).toBe('March');
 });
