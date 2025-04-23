@@ -4,7 +4,7 @@ on:
 
 jobs:
   test_pull_request:
-    runs-on: ubuntu-lastest
+    runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
@@ -12,4 +12,4 @@ jobs:
           node-version: 21
       - run: npm ci
       - run: npm test
-      - run: npm run builld
+      - run: npm run build
