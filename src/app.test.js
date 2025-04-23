@@ -11,3 +11,8 @@ test('getDay returns month of the year', () => {
     const month = monthOfTheYear( new Date('20/11/2020') );
     expect(month).toBe('March');
 });
+
+test('month of the year return correct month of the year', () => {
+    const month = monthOfTheYear( new Date('20/12/2020') );
+    expect(month).toBe('November');
+});
